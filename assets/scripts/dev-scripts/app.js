@@ -1,0 +1,3 @@
+$(function(){
+    ImgResizer.init();
+})

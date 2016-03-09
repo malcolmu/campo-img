@@ -1,0 +1,66 @@
+// .campo-outer-container {
+//     display: block;
+    
+
+// }
+.campo-img-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    .campo-sky {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .campo-hills2 {
+        position: absolute;
+        width: 103%;
+        top: 28%;
+        left: -2%;
+    }
+    .campo-trees {
+        position: absolute;
+        width: 18%;
+        top: 23%;
+        left: 22%;
+    }
+    .campo-bushes {
+        position: absolute;
+        width: 99%;
+        top: 39%;
+        left: 0%;
+    }
+    .campo-hills1 {
+        position: absolute;
+        width: 99%;
+        top: 44%;
+        left: -1%;
+    }
+    .campo-campo {
+        position: absolute;
+        width: 82%;
+        top: 14%;
+        left: 8%;
+    }
+    .campo-grass {
+        position: absolute;
+        width: 78%;
+        top: 59%;
+        left: 10%;
+
+    }
+    .campo-star {
+        position: absolute;
+        width: 10%;
+        top: 38%;
+        left: 77%;
+    }
+    .campo-sancho {
+        position: absolute;
+        width: 46%;
+        top: 74%;
+        left: 43%;
+    }
+}

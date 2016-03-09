@@ -1,0 +1,59 @@
+// breakpoints
+
+$S:     410px;
+$M:     768px;
+$L:     992px;
+$XL:    1200px;
+$XXL:   1364px;
+
+// media queries
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+  @else if $canvas == XL {
+   @media only screen and (min-width: $XL) { @content; }
+  }
+  @else if $canvas == XXL {
+   @media only screen and (min-width: $XXL) { @content; }
+  }
+}
+
+/* brand colours */
+$purple:#c35693; 
+$pink: #f0687c;
+$orange:#f49265;
+$yellow:#e9cc70; 
+$green:#3c8b79; 
+$lightblue:#d8eee9;
+$darkblue:#272960; 
+$red:#F26678;
+
+/* standard colours */
+$grey:#757575;
+$white:#ffffff;
+$black:#000000;
+
+/* shadow */
+@mixin text-shadow($x: 0px, $y: 1px, $blur: 20px, $color: rgba(0,0,0,.3)) {
+    text-shadow: $x $y $blur $color;
+}
+@mixin text-shadow-b($x: 0px, $y: 0px, $blur: 20px, $color: rgba(255,255,255,.3)) {
+    text-shadow: $x $y $blur $color;
+}
+@mixin box-shadow($x: 0px, $y: 1px, $blur: 20px, $color: rgba(0,0,0,.3)) {
+    text-shadow: $x $y $blur $color;
+}
+
+/* pulse */
+@keyframes pulse-white {
+    50% {
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 3);
+    }
+}
